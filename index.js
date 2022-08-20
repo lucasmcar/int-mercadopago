@@ -52,6 +52,12 @@ app.get('/payment', async (req, res) =>{
 });
 
 
+app.post('/notification', (req, res) =>{
+    console.log(req.query);
+    res.send("OK");
+})
+
+
 
 app.listen(3000, (req, res) =>{
     console.log('Servidor rodando');
